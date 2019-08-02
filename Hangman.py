@@ -3,7 +3,7 @@ __author__ = "Tim Chapman"
 __copyright__ = "none"
 __credits__ = ""
 __license__ = "Apache v2.0"
-__version__ = "0.1"
+__version__ = "0.2"
 __maintainer__ = "Tim Chapman"
 __email__ = "tim.chapman273@gmail.com"
 __status__ = "Development"
@@ -123,13 +123,13 @@ while word != "":
 			failed +=1
 			turns -=1
 			os.system('clear')
-			print("letters guessed:", guesses2) 
+			print("letters guessed:", guesses2)
 			print ("You have ", + turns, " remaining")
 			hangman = "hangman"
 			hangman += str(failed)
-			locals()[hangman]()												
-																	
+			locals()[hangman]()
+
 if failed == 10:
 	print("You lose, better luck next time")
-else:						
+else:
 	print("Congratulations you successfully found the word " + word2)
